@@ -1,11 +1,11 @@
-package com.nobuhisaabe.instagramApp
+package com.example.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class InstagramApplication
+class DemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<InstagramApplication>(*args)
+	runApplication<DemoApplication>(*args)
 }

@@ -1,1 +1,1 @@
-rootProject.name = "instagramApp"
+rootProject.name = "demo"

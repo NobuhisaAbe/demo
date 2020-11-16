@@ -1,25 +1,5 @@
 version: "3"
 services:
-  nginx:
-    container_name: container_nginx
-    hostname: container_nginx_hostname
-    build: docker/nginx
-    restart: always
-    ports:
-      - 80:8080
-  app:
-    container_name: container_app
-    hostname: container_app_hostname
-    build: docker/app
-    restart: always
-    ports:
-      - 8080
-    command: ./gradlew bootRun
-    links:
-      - mysql
-    depends_on:
-      - nginx
-      - mysql
   mysql:
     image: mysql:5.7
     container_name: container_mysql
